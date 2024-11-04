@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+        body{
+    background-image: url(./home2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: rgba(192, 6, 6, 0.925); font-size: 50px; font-family: 'Junge',cursive;
+    font-weight: 60px;
+}
+.form{
+
+    justify-content: flex-start;
+    
+}
+.login{
+    color: rgb(134, 146, 157);
+}
+.search{
+    margin: 0px;
+    margin-left: 25%;
+    height: 3em;
+    width: 40em;
+}
+#see{
+    margin-left: 0px;
+    width: 7em;
+    background-color: rgba(219, 6, 6, 0.939);
+    color: rgb(255, 253, 253);
+}
+.register{
+    margin-top: 0em;
+    height: 40px;
+    font-size: 0.5;
+    margin-left: 80em;
+    background-color: rgba(219, 5, 5, 0.939);
+    border: none;
+    color: rgb(255, 253, 253);
+    border-radius: 9px;
+}
+#login{
+    height: 40px;
+    width: 60px;
+    background-color: rgba(219, 5, 5, 0.939);
+    color: rgb(255, 253, 253);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.696);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.page{
+    position: relative;
+    z-index: 0;
+}
+.sidenav{
+    color: rgba(194, 9, 9, 0.968);
+    position: absolute;
+    height: 350px;
+    width: 10em;
+    top: 180px;
+    left: 0;
+    background-color: rgba(9, 13, 16, 0.679);
+    padding-top: 20px;
+}
+.sidenav a{
+    color: aliceblue;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.sidenav a:hover{
+    background-color: rgb(193, 5, 5);
+}
+label{
+    margin-top: 1em;
+    margin-left: 1.5em;
+    font-size: 30px;
+}
+.blocks{
+    width: 70vw;
+    /*margin-left: 8em;
+   height: 23em;
+   width: 49em;*/
+   background-color: rgba(0, 0, 0, 0.246);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   
+   
+}
+.block1{
+    margin-left: 5em;
+    
+}
+.image{
+    display: inline-block;
+    height: 10em;
+    width: 15em;
+    margin: 10px;
+   margin-left: 5px;
+   position: relative;
+   flex-direction: row;
+   padding: 1px;
+}
+.blocksmain{
+    display: flex;
+    justify-content: center;
+}
+.block1main{
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="page">
+    <h1 class="home">Home Page</h1>
+     <!-- <a class="login" href="index.html">Back to login page</a> -->
+     <div class="form"><form action="">
+     <input type="search" class="search" id="search" placeholder="Search Movies Here">
+     <button type="submit" class="search" id="see" value="search">Search</button></form></div>
+     <a href="./register.html"><button type="submit" class="register">Register</button></a>
+     <a href="./index.html"><button type="submit" name="login" id="login">Login</button></a>
+     </div>
+     <div class="sidenav">
+        <label for="">Menu</label>
+        <a href="./homepage.html">Home</a>
+        <a href="">Adventure</a>
+        <a href="">Horror</a>
+        <a href="">Thriller</a>
+        <a href="">Kids</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+     </div>
+     <div class="blocksmain">
+        <div class="blocks">
+            <img src="./Bollywood.png" alt="Bollywood Movies" class="image">
+            <img src="./Hollywood.png" alt="Hollywood Movies" class="image">
+            <img src="./Tollywood.jpg" alt="Tollywood Movies" class="image">
+            <img src="./Horror.avif" alt="Horror Movies" class="image">
+            
+            <video class="image" controls>
+                <img src="./marvel.webp" alt="Marvel Studio" class="image">
+                <source src="./Avengers_ Endgame - Official Trailer.mp4">
+            </video>
+            <img src="Thriller.jpg" alt="Thriller" class="image">  
+        </div>
+     </div>
+    <div class="block1main">
+        <div class="block1">
+            <img src="./avengers.webp" alt="Avengers" class="image">
+            <img src="./money.jpg" alt="" class="image">
+            <img src="./breaking.webp" alt="" class="image">
+            <img src="./strange.webp" alt="" class="image">
+            <img src="./X-Men.jpg" alt="" class="image">
+            <img src="https://www.shutterstock.com/image-illustration/graphic-design-wade-wilson-deadpool-600nw-2325978963.jpg" alt="deadpool" class="image">
+            <img src="https://slm-assets.secondlife.com/assets/33738651/lightbox/X-Wednesday%20Season%202.jpg?1690906370" alt="wednesday" class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lQzlMNjoC142_ngSjA9XMec2G7KsxDMcrg&s" alt="one piece" class="image">
+        </div>
+    </div>
+    
+
+</body>
+</html>
